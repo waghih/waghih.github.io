@@ -1,0 +1,406 @@
+body {
+  background: #f5f5f5;
+}
+
+#header {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 80px 0  120px;
+}
+#header h2 {
+  margin: 0;
+}
+#header h4 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.shadow {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.15), 0 3px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+#about #profile {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  top: 230px;
+  left: 50%;
+  margin-left: -90px;
+  z-index: 1;
+  display: block;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 5px;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+}
+#about #profile img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+}
+#about .links {
+  padding-top: 110px;
+}
+#about .links a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#about p {
+  margin-top: 35px;
+  color: #4f4f4f;
+}
+#about #action-profile {
+  padding: 30px 0;
+}
+#about #action-profile a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.leaf-line {
+  height: 10px;
+  width: 50px;
+  background: #26a69a;
+  border-radius: 50px 10px 50px 10px;
+  border: 0px;
+}
+
+#web_development img, #mobile_development img {
+  padding: 20px;
+}
+
+.timeline {
+  position: relative;
+}
+.timeline::before {
+  content: '';
+  margin-top: 90px;
+  background: #C5CAE9;
+  width: 5px;
+  height: 80%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  width: 100%;
+  margin-bottom: 70px;
+}
+.timeline-item:nth-child(even) .timeline-content {
+  float: right;
+  padding: 40px 30px 10px 30px;
+}
+.timeline-item:nth-child(even) .timeline-content .date {
+  right: auto;
+  left: 0;
+}
+.timeline-item:nth-child(even) .timeline-content::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 0px;
+  left: -15px;
+  border-width: 0px 15px 15px 0;
+  border-color: transparent #ff5252 transparent transparent;
+}
+.timeline-item::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.timeline-content {
+  position: relative;
+  top: 35px;
+  width: 45%;
+  padding: 10px 30px;
+  border-radius: 4px;
+  background: #fff;
+}
+.timeline-content h2 {
+  font-size: 24px;
+}
+.timeline-content::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 0px;
+  right: -15px;
+  border-width: 0px 0 15px 15px;
+  border-color: transparent transparent transparent #ff5252;
+}
+
+.timeline-img {
+  width: 30px;
+  height: 30px;
+  background: #009688;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-top: 25px;
+  margin-left: -15px;
+}
+
+.timeline-card {
+  padding: 0 !important;
+}
+.timeline-card p {
+  padding: 0 20px;
+}
+.timeline-card a {
+  margin-left: 20px;
+}
+
+.timeline-item:nth-child(2) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://hd.unsplash.com/photo-1458530970867-aaa3700e966d") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(5) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://hd.unsplash.com/photo-1444093826349-9ce8c622f4f3") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(6) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://hd.unsplash.com/photo-1471479917193-f00955256257") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(8) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://hd.unsplash.com/photo-1466840787022-48e0ec048c8a") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(10) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://hd.unsplash.com/photo-1447639703758-f525f36456bf") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(11) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://hd.unsplash.com/photo-1469429978400-082eec725ad5") center center no-repeat;
+  background-size: cover;
+}
+
+.timeline-img-header {
+  height: 200px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.timeline-img-header h2 {
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+}
+
+blockquote {
+  margin-top: 30px;
+  color: #757575;
+  border-left-color: #3F51B5;
+  padding: 0 20px;
+}
+
+.date {
+  background: #ff5252;
+  display: inline-block;
+  color: #FFFFFF;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline::before {
+    content: '';
+    margin-top: 10px;
+    background: #C5CAE9;
+    width: 5px;
+    height: 95%;
+    position: absolute;
+    left: 40px;
+    transform: translateX(-50%);
+  }
+  .timeline .timeline-img {
+    left: 40px;
+  }
+  .timeline .timeline-content {
+    max-width: 100%;
+    width: auto;
+    margin-left: 60px;
+  }
+  .timeline .timeline-item:nth-child(even) .timeline-content {
+    float: none;
+    padding: 10px 30px;
+  }
+  .timeline .timeline-item:nth-child(even) .timeline-content .date {
+    right: 0;
+    left: auto;
+  }
+  .timeline .timeline-item:nth-child(even) .timeline-content::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 0px;
+    left: -18px;
+    border-width: 0px 20px 20px 0;
+    border-color: transparent #fff transparent transparent;
+  }
+  .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 0px;
+    left: -18px;
+    border-width: 0px 20px 20px 0;
+    border-color: transparent #fff transparent transparent;
+  }
+}
+.red-progress {
+  background: #ff5252 !important;
+}
+
+.no-gutter {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.box {
+  height: 120px;
+  border-top: 1px solid #eee;
+}
+.box p {
+  margin-bottom: 0px;
+}
+
+.full-width {
+  width: 100% !important;
+}
+
+/* Preloader CSS */
+
+#loading{
+  background-color: #009688;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  margin-top: 0px;
+  top: 0px;
+}
+#loading-center{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  }
+#loading-center-absolute {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 200px;
+  width: 200px;
+  margin-top: -100px;
+  margin-left: -100px;  
+
+}
+.object{
+    -moz-border-radius: 50% 50% 50% 50%;
+  -webkit-border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
+  position: absolute;
+  border-left: 5px solid #FFF;
+  border-right: 5px solid #FFF;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  -webkit-animation: animate 2s infinite;
+  animation: animate 2s infinite; 
+  }
+
+#object_one{
+  left: 75px;
+  top: 75px;
+  width: 50px;
+  height: 50px;
+  }
+              
+#object_two{
+  left: 65px;
+  top: 65px;
+  width: 70px;
+  height: 70px;
+  -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+  }
+    
+#object_three{
+  left: 55px;
+  top: 55px;
+  width: 90px;
+  height: 90px;
+  -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+  }
+#object_four{
+  left: 45px;
+  top: 45px;
+  width: 110px;
+  height: 110px;
+  -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+  
+  } 
+
+@-webkit-keyframes animate {
+ 
+
+50% {
+  -ms-transform: rotate(180deg); 
+    -webkit-transform: rotate(180deg); 
+    transform: rotate(180deg); 
+  }
+    
+100% {
+  -ms-transform: rotate(0deg); 
+    -webkit-transform: rotate(0deg); 
+    transform: rotate(0deg); 
+  }   
+
+}
+
+@keyframes animate {
+
+50% {
+  -ms-transform: rotate(180deg); 
+    -webkit-transform: rotate(180deg); 
+    transform: rotate(180deg); 
+  }
+    
+100% {
+  -ms-transform: rotate(0deg); 
+    -webkit-transform: rotate(0deg); 
+    transform: rotate(0deg); 
+  }   
+
+  
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px) {
+  #about #profile {
+    top: 275px;
+  }
+
+  #action-profile a {
+    margin-bottom: 10px;
+  }
+}
