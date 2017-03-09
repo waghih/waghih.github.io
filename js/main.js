@@ -12,31 +12,34 @@ $(document).ready(function () {
 	$('#web_skill_range').height(web_card_height);
 	$('#mobile_skill_range').height(mobile_card_height);
 	
-	// $("#contactForm").on("submit", function (event) {
-	//     event.preventDefault();
-	//     submitForm();
-	// });
+	$("#contactForm").on("submit", function (event) {
+	    event.preventDefault();
+	    submitForm();
+	});
 
-	// function submitForm(){
-	//     // Initiate Variables With Form Content
-	//     var name = $("#name").val();
-	//     var email = $("#email").val();
-	//     var message = $("#message").val();
+	function submitForm(){
+	    // Initiate Variables With Form Content
+	    var name = $("#name").val();
+	    var email = $("#email").val();
+	    var message = $("#message").val();
 
-	//     $.ajax({
-	//         type: "POST",
-	//         url: "http://formspree.io/alfaruq93@gmail.com",
-	//         data: "name=" + name + "&email=" + email + "&message=" + message,
-	//         success : function(data){
-	//             // if (text == "success"){
-	//             //     toastr.success('Message submitted.');
-	//             // } else {
-	//             //     toastr.error(text);
-	//             // }
-	//             console.log(data);
-	//         }
-	//     });
-	// }
+	    $.ajax({
+            url:'https://formspree.io/alfaruq93@gmail.com',
+            method:'POST',
+            data:{
+                name:name,
+                _replyto:email,
+                email:email,
+                message:message,
+                _subject:'My Form Submission',
+            },
+            dataType:"json",
+            success:function(response) {
+                console.log(response)
+            }   
+
+        });   
+	}
 
 	var map_height = $('#contact_container').height();
 
